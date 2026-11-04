@@ -1,0 +1,920 @@
+[
+  {
+    "method": "POST",
+    "path": "/api/v{version}/App/GetAppsList",
+    "tag": "App",
+    "summary": null
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/App/GetAppDetail",
+    "tag": "App",
+    "summary": null
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/App/GetAppPages",
+    "tag": "App",
+    "summary": null
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/App/GetAppWithPages",
+    "tag": "App",
+    "summary": null
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Audit/GetAuditLog",
+    "tag": "Audit",
+    "summary": "Get Audit Log Data"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Auth/IsDomainAccepted",
+    "tag": "Auth",
+    "summary": "To Validate is provided Domain is accepted."
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Auth/ValidateUnsubscribeToken",
+    "tag": "Auth",
+    "summary": "Validate the unsubscribe token sent via digest email link."
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Auth/EmailTrigger",
+    "tag": "Auth",
+    "summary": "Test Mail trigger only by sending to mail id"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Auth/testDigestEmail",
+    "tag": "Auth",
+    "summary": "Test Digest Email"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Auth/DecryptValue",
+    "tag": "Auth",
+    "summary": "Decrypts an encrypted value using AES encryption."
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/BackupArtifactVersion/SaveUserArtifactVersionPreferences",
+    "tag": "BackupArtifactVersion",
+    "summary": "Saves or updates Backup artifact preferences for a user."
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/BackupArtifactVersion/RemoveSelectedWorkspace",
+    "tag": "BackupArtifactVersion",
+    "summary": "Removes a selected workspace for a user."
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/BackupArtifactVersion/GetArtifactVersionDetails",
+    "tag": "BackupArtifactVersion",
+    "summary": "Fetches backup artifact preferences for a specific user."
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/BackupArtifactVersion/GetSelectedWorkspace",
+    "tag": "BackupArtifactVersion",
+    "summary": "Fetches backup artifact preferences Selected Workspace."
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/BackupArtifactVersion/GetWorkspaceDetails",
+    "tag": "BackupArtifactVersion",
+    "summary": "Fetches Workspace details for specific tenant."
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/BackupArtifactVersion/GetPagedBackupVersions",
+    "tag": "BackupArtifactVersion",
+    "summary": "Fetches paginated backup artifact versions."
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/BackupArtifactVersion/Restore",
+    "tag": "BackupArtifactVersion",
+    "summary": "Fetches snapshot client info based on tenant, workspace, and version."
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/BackupArtifactVersion/download",
+    "tag": "BackupArtifactVersion",
+    "summary": "Fetches snapshot client info based on tenant, workspace, and version and let user to download."
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/BackupArtifactVersion/CheckAzureStorageConnection",
+    "tag": "BackupArtifactVersion",
+    "summary": "Checks the Azure Storage connection status for the tenant."
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/BackupArtifactVersion/SaveBlobConnectionString",
+    "tag": "BackupArtifactVersion",
+    "summary": "Saves the blob connection string for the tenant after validating it."
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/BackupArtifactVersion/TriggerBlobConnectionIdWebhook",
+    "tag": "BackupArtifactVersion",
+    "summary": "Triggers blob connection ID webhook with workspace ID and tenant ID from token."
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/BackupArtifactVersion/GetBlobConnectionString",
+    "tag": "BackupArtifactVersion",
+    "summary": "Retrieves the decrypted blob connection string for the tenant from token."
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Client/GenerateSecretNotification",
+    "tag": "Client",
+    "summary": "Retrieve report count and workspace count based on tenant ID and product code, and need to generate Email Notification."
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Client/GenerateEmailNotification",
+    "tag": "Client",
+    "summary": "Retrieve report count and workspace count based on tenant ID and product code, and need to generate Email Notification."
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Client/GenerateEmailNotificationForSecret",
+    "tag": "Client",
+    "summary": "Retrieve report count and workspace count based on tenant ID and product code, and need to generate Email Notification."
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/Client/GetClientConfigrations",
+    "tag": "Client",
+    "summary": "Retrieve ClientConfigrations based on tenant ID."
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/Client/GetReportDetails",
+    "tag": "Client",
+    "summary": "Retrieve report count and workspace count based on tenant ID and product code, along with subscription details."
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/Client/GetAllNotification",
+    "tag": "Client",
+    "summary": "To Get All Notification Against Tenant and User Detail."
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Client/MarkNotifications",
+    "tag": "Client",
+    "summary": "Marks multiple notifications as read for a given user and tenant."
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Client/DeleteNotifications",
+    "tag": "Client",
+    "summary": "Marks one or more notifications as deleted for a given user and tenant."
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/Client/IsWorkspaceExist",
+    "tag": "Client",
+    "summary": "To Verify Workspace Setup is completed."
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/Client/IsFirstTimeLoad",
+    "tag": "Client",
+    "summary": "To Verify Workspace Setup is completed."
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Client/Update",
+    "tag": "Client",
+    "summary": "Update Client Configration"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Client",
+    "tag": "Client",
+    "summary": "Register Client with Details"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Client/TriggerDataSync",
+    "tag": "Client",
+    "summary": "Trigger Azure Data Factory Pipeline for Onboarding - Step 5: Sync Data"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/Client/GetSyncStatus",
+    "tag": "Client",
+    "summary": "Get Data Sync Status with ADF Pipeline Logs for Step 5 - Onboarding"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Client/CheckSecretExpiry",
+    "tag": "Client",
+    "summary": "To get App Client seacret expiry."
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetWorkspacesWithCounts",
+    "tag": "DashboardDetail",
+    "summary": "Get paginated workspaces with report, dataset, and dataflow counts"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetReportsList",
+    "tag": "DashboardDetail",
+    "summary": "Get paginated list of reports with workspace information"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetDatasetsList",
+    "tag": "DashboardDetail",
+    "summary": "Get paginated list of datasets with workspace and configuration information"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetDataflowsList",
+    "tag": "DashboardDetail",
+    "summary": "Get paginated list of dataflows with workspace information"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetDashboardsList",
+    "tag": "DashboardDetail",
+    "summary": "Get paginated list of dashboards with workspace and publication information"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetDashboardTiles",
+    "tag": "DashboardDetail",
+    "summary": "Get tiles for a specific dashboard with source report information"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetDashboardSourceReports",
+    "tag": "DashboardDetail",
+    "summary": "Get source reports pinned in a dashboard"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetDashboardAppInfo",
+    "tag": "DashboardDetail",
+    "summary": "Get app publication information if dashboard is published to an app"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetDashboardMetadata",
+    "tag": "DashboardDetail",
+    "summary": "Get dashboard metadata including created date, tile count, and source report count"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetDashboardDetail",
+    "tag": "DashboardDetail",
+    "summary": "Get complete dashboard detail including metadata, tiles, source reports, and app information"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetDuplicateReports",
+    "tag": "DashboardDetail",
+    "summary": "Get reports with duplicate names showing workspaces and counts"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetDuplicateDatasets",
+    "tag": "DashboardDetail",
+    "summary": "Get datasets with duplicate names showing workspaces and counts"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetDuplicateDataflows",
+    "tag": "DashboardDetail",
+    "summary": "Get dataflows with duplicate names showing workspaces and counts"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetGatewaysList",
+    "tag": "DashboardDetail",
+    "summary": "Get paginated list of gateways with online/offline status"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetBackupsList",
+    "tag": "DashboardDetail",
+    "summary": "Get paginated list of artifact backups with version information"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/DashboardDetail/GetOverdueMissingBackupsCount",
+    "tag": "DashboardDetail",
+    "summary": "Get total count of overdue and never-backed-up artifacts"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetOverdueMissingBackupsList",
+    "tag": "DashboardDetail",
+    "summary": "Get paginated list of overdue and never-backed-up artifacts with filtering"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/DashboardDetail/GetFailedBackupsCount",
+    "tag": "DashboardDetail",
+    "summary": "Get count of artifacts with failed backup attempts"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetFailedBackupsList",
+    "tag": "DashboardDetail",
+    "summary": "Get paginated list of artifacts with failed backup attempts"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/DashboardDetail/GetBackupManagementSummary",
+    "tag": "DashboardDetail",
+    "summary": "Get backup management summary with eligible/protected counts and coverage percentage"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetDatasetRefreshesByStatus",
+    "tag": "DashboardDetail",
+    "summary": "Get paginated dataset refresh history with status filtering (Success/Failed/LongRunning/Scheduled/Unscheduled)"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetUsersList",
+    "tag": "DashboardDetail",
+    "summary": "Get paginated list of workspace users with filtering and sorting"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetExpiringSoonBackupsList",
+    "tag": "DashboardDetail",
+    "summary": "Get backups expiring within specified days (default 14 days)"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetFailedDatasetRefreshesList",
+    "tag": "DashboardDetail",
+    "summary": "Get all failed dataset refreshes with optional date range filtering"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetInactiveDatasetsList",
+    "tag": "DashboardDetail",
+    "summary": "Get datasets with no refresh activity in specified days (default 30 days)"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetOnDemandDatasetRefreshesList",
+    "tag": "DashboardDetail",
+    "summary": "Get all on-demand (manual) dataset refreshes with optional date range filtering"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetScheduledDatasetRefreshesList",
+    "tag": "DashboardDetail",
+    "summary": "Get all scheduled (automatic) dataset refreshes with optional date range filtering"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetSuccessfulDatasetRefreshesList",
+    "tag": "DashboardDetail",
+    "summary": "Get all successful (completed) dataset refreshes with optional date range filtering"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetLongRunningDatasetRefreshesList",
+    "tag": "DashboardDetail",
+    "summary": "Get all long-running dataset refreshes with optional date range and threshold filtering"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetWorkspaceUsers",
+    "tag": "DashboardDetail",
+    "summary": "Get all users for a specific workspace with their roles"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetWorkspaceReports",
+    "tag": "DashboardDetail",
+    "summary": "Get all reports for a specific workspace"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetWorkspaceDatasets",
+    "tag": "DashboardDetail",
+    "summary": "Get all datasets for a specific workspace with refresh status"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetWorkspaceDataflows",
+    "tag": "DashboardDetail",
+    "summary": "Get all dataflows for a specific workspace with refresh status"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetDatasetRefreshHistory",
+    "tag": "DashboardDetail",
+    "summary": "Get all refresh history for a specific dataset"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetDatasetUsers",
+    "tag": "DashboardDetail",
+    "summary": "Get all users with access to a specific dataset"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetDatasetDetails",
+    "tag": "DashboardDetail",
+    "summary": "Get detailed information for a specific dataset"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetDataflowRefreshHistory",
+    "tag": "DashboardDetail",
+    "summary": "Get all refresh history for a specific dataflow"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetDataflowDetails",
+    "tag": "DashboardDetail",
+    "summary": "Get detailed information for a specific dataflow"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetReportDetails",
+    "tag": "DashboardDetail",
+    "summary": "Get detailed information for a specific report"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DashboardDetail/GetUserWorkspaces",
+    "tag": "DashboardDetail",
+    "summary": "Get all workspaces for a specific user"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DigestAdmin/SendOnDemand",
+    "tag": "DigestAdmin",
+    "summary": "Send an on-demand digest email to a specific recipient"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DigestAdmin/GetAuditLog",
+    "tag": "DigestAdmin",
+    "summary": "Get the digest email audit log with filters"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/DigestAdmin/GetEmailSnapshot/{logId}",
+    "tag": "DigestAdmin",
+    "summary": "Get the HTML snapshot of a sent digest email"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DigestEmail/SaveUserPreferences",
+    "tag": "DigestEmail",
+    "summary": "Saves or updates notification preferences for a user."
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/DigestEmail/GetDigestUserDetails",
+    "tag": "DigestEmail",
+    "summary": "Fetches notification preferences for a specific user."
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DigestEmail/UnsubscribeDigestEmail",
+    "tag": "DigestEmail",
+    "summary": "Unsubscribes a user from digest email scheduler."
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DowntimeLog/GetDowntimeList",
+    "tag": "DowntimeLog",
+    "summary": "Get DownTime Log Data"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DowntimeLog/GetAllGatewayList",
+    "tag": "DowntimeLog",
+    "summary": "Get all gateway list by tenant id"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/DowntimeLog/GetAllDatasourceList",
+    "tag": "DowntimeLog",
+    "summary": "Get all datasource list by tenant id"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Gateway/GetGatewaySummary",
+    "tag": "Gateway",
+    "summary": "Get Gateway Summary"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Gateway/GetGatewayList",
+    "tag": "Gateway",
+    "summary": "Get Gateway List"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Gateway/GetGatewayDataSources",
+    "tag": "Gateway",
+    "summary": "Get DataSources for a Gateway"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Governance/GetPublicWebFindings",
+    "tag": "Governance",
+    "summary": "Get Published to Public Web findings"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Governance/GetPublicWebFindingDetail",
+    "tag": "Governance",
+    "summary": "Get detail for one Published to Public Web finding by id"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Governance/GetExternalGuestUserActivity",
+    "tag": "Governance",
+    "summary": "Get External User Activity (Guest) findings"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Governance/GetExternalGuestUserActivityDetail",
+    "tag": "Governance",
+    "summary": "Get detail for one External User Activity (Guest) finding by id"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/Governance/shared-report-findings",
+    "tag": "Governance",
+    "summary": "Get paginated shared report exposure findings"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/Governance/all-findings",
+    "tag": "Governance",
+    "summary": "Get all findings (unified Governance + Sharing)"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/GrowthAnalytics/GetSummaryDashboardSnapshotList",
+    "tag": "GrowthAnalytics",
+    "summary": "Get historical summary dashboard snapshots for growth and trend analysis"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/LineageExplorer/GetLineageData",
+    "tag": "LineageExplorer",
+    "summary": "Get comprehensive lineage data for selected workspaces"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/LineageExplorer/GetDatasetSchema",
+    "tag": "LineageExplorer",
+    "summary": "Get schema for a single dataset"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/LineageExplorer/health",
+    "tag": "LineageExplorer",
+    "summary": "Health check for lineage explorer service"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/LineageExplorer/GetArtifacts",
+    "tag": "LineageExplorer",
+    "summary": "Lightweight artifact listing for initial page load"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/LineageExplorer/GetArtifactNeighborhood",
+    "tag": "LineageExplorer",
+    "summary": "Get full lineage (upstream + downstream) for an artifact"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/LineageExplorer/GetImpactAnalysis",
+    "tag": "LineageExplorer",
+    "summary": "Get full impact analysis for a node"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/LineageExplorer/GetScanHistory",
+    "tag": "LineageExplorer",
+    "summary": "Get recent metadata-scan history (paged)"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/LineageExplorer/GetArtifactDetail",
+    "tag": "LineageExplorer",
+    "summary": "Lightweight artifact listing for initial page load"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/LineageExplorer/GetNodeDetails/{nodeSourceKey}",
+    "tag": "LineageExplorer",
+    "summary": "Get detailed information for a specific lineage node"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/LineageExplorer/GetWorkspaceLineage",
+    "tag": "LineageExplorer",
+    "summary": "Get workspace-wide lineage traversal"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/LineageExplorer/GetDataflowMetadata",
+    "tag": "LineageExplorer",
+    "summary": "Get metadata for a single dataflow"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/LineageExplorer/GetDataflowSchema",
+    "tag": "LineageExplorer",
+    "summary": "Get dataflow entities and columns schema"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/Onboarding/GetStatus",
+    "tag": "Onboarding",
+    "summary": null
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Onboarding/StartSession",
+    "tag": "Onboarding",
+    "summary": null
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Onboarding/ValidateAzureCredentials",
+    "tag": "Onboarding",
+    "summary": null
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Onboarding/ValidateSecurityGroup",
+    "tag": "Onboarding",
+    "summary": null
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Onboarding/VerifyFabricSettings",
+    "tag": "Onboarding",
+    "summary": null
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/Onboarding/GetSecurityGroupObjectId",
+    "tag": "Onboarding",
+    "summary": null
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/Onboarding/GetStepData",
+    "tag": "Onboarding",
+    "summary": null
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Onboarding/DownloadScript",
+    "tag": "Onboarding",
+    "summary": null
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Onboarding/VerifyScriptExecution",
+    "tag": "Onboarding",
+    "summary": null
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Onboarding/InitiateWorkspaceSync",
+    "tag": "Onboarding",
+    "summary": null
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/Onboarding/GetSyncStatus",
+    "tag": "Onboarding",
+    "summary": null
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Onboarding/CompleteStep",
+    "tag": "Onboarding",
+    "summary": null
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Onboarding/ReportError",
+    "tag": "Onboarding",
+    "summary": null
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/Onboarding/DebugClaims",
+    "tag": "Onboarding",
+    "summary": null
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/PlanConfig/GetMinimumBackup",
+    "tag": "PlanConfig",
+    "summary": "Get minimum backup value by tenant id."
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/RefreshHealth/runs",
+    "tag": "RefreshHealth",
+    "summary": "Get refresh runs"
+  },
+  {
+    "method": "GET",
+    "path": "/api/v{version}/RefreshHealth/run-detail",
+    "tag": "RefreshHealth",
+    "summary": "Get refresh run detail"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/RefreshHealthMonitor/GetRefreshHealthReport",
+    "tag": "RefreshHealthMonitor",
+    "summary": "Get dataset refresh health report"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/Report/GetEmbedInfo",
+    "tag": "Report",
+    "summary": "Get Embed Details for Report to the client."
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/ReportsAndDashboards/GetReportsAndDashboards",
+    "tag": "ReportsAndDashboards",
+    "summary": null
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/SummaryDashboard/GetArtifactCounts",
+    "tag": "SummaryDashboard",
+    "summary": "Get tenant artifact counts including workspaces, reports, datasets, dataflows, users, gateways, and backups"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/SummaryDashboard/GetRefreshStatistics",
+    "tag": "SummaryDashboard",
+    "summary": "Get dataset refresh statistics including success/failure rates, long-running refreshes, and inactive datasets"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/SummaryDashboard/GetMostActiveReports",
+    "tag": "SummaryDashboard",
+    "summary": "Get most active reports based on view count, unique users, and activity"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/SummaryDashboard/GetMostActiveWorkspaces",
+    "tag": "SummaryDashboard",
+    "summary": "Get most active workspaces based on views, report modifications, and dataset refreshes"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/SummaryDashboard/GetDataflowRefreshStatistics",
+    "tag": "SummaryDashboard",
+    "summary": "Get dataflow refresh statistics including success/failure rates and average duration"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/SummaryDashboard/GetRefreshPerformanceStatistics",
+    "tag": "SummaryDashboard",
+    "summary": "Get unified refresh performance statistics for datasets, dataflows, or all refreshes"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/SummaryDashboard/GetDatasetRefreshStatisticsSummary",
+    "tag": "SummaryDashboard",
+    "summary": "Get dataset refresh statistics including success/failure rates and average duration"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/SummaryDashboard/GetReportStatisticsSummary",
+    "tag": "SummaryDashboard",
+    "summary": "Get report statistics including total reports, pages, and unique datasets"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/SummaryDashboard/GetUserRoleBreakdown",
+    "tag": "SummaryDashboard",
+    "summary": "Get user role breakdown by Admin, Member, Contributor, and Viewer"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/SummaryDashboard/GetOperationalHealthRefreshStats",
+    "tag": "SummaryDashboard",
+    "summary": "Get operational health refresh statistics for failed datasets and dataflows"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/SummaryDashboard/GetFailedRefreshesList",
+    "tag": "SummaryDashboard",
+    "summary": "Get detailed list of failed dataset and dataflow refreshes"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/SummaryDashboard/GetLongRunningRefreshes",
+    "tag": "SummaryDashboard",
+    "summary": "Get long running dataset and dataflow refreshes"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/TenantExplorer/GetDatasetsByWorkspace",
+    "tag": "TenantExplorer",
+    "summary": "Get datasets within a workspace with last refresh status"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/TenantExplorer/GetDataflowsByWorkspace",
+    "tag": "TenantExplorer",
+    "summary": "Get dataflows within a workspace with last refresh status"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/TenantExplorer/GetReportsByWorkspace",
+    "tag": "TenantExplorer",
+    "summary": "Get reports within a workspace"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/TenantExplorer/GetUsersByWorkspace",
+    "tag": "TenantExplorer",
+    "summary": "Get users with access to a workspace"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/TenantExplorer/GetUserWorkspaceFootprint",
+    "tag": "TenantExplorer",
+    "summary": "Get all workspaces accessible by a user"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/TenantExplorer/GetDatasetRefreshHistory",
+    "tag": "TenantExplorer",
+    "summary": "Get refresh history for a dataset (7-365 days)"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/TenantExplorer/GetDataflowRefreshHistory",
+    "tag": "TenantExplorer",
+    "summary": "Get refresh history for a dataflow (7-365 days)"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/TenantExplorer/GetReportPagesByReport",
+    "tag": "TenantExplorer",
+    "summary": "Get all pages within a report"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/TenantExplorer/GetDatasetUsersByDataset",
+    "tag": "TenantExplorer",
+    "summary": "Get users with dataset-level permissions"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/TenantExplorer/GetMostActiveDatasets",
+    "tag": "TenantExplorer",
+    "summary": "Get top N most active datasets (analytics)"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/TenantExplorer/GetMostActiveDataflows",
+    "tag": "TenantExplorer",
+    "summary": "Get top N most active dataflows (analytics)"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/TenantExplorer/GetMostActiveItems",
+    "tag": "TenantExplorer",
+    "summary": "Get top N most active items by type (unified endpoint)"
+  },
+  {
+    "method": "POST",
+    "path": "/api/v{version}/TenantExplorer/GetWorkspaceActivityLog",
+    "tag": "TenantExplorer",
+    "summary": "Get unified activity log for a workspace"
+  }
+]

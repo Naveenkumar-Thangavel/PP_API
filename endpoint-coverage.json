@@ -1,0 +1,1236 @@
+{
+  "total": 153,
+  "executed": 153,
+  "passed": 84,
+  "failed": 69,
+  "notExecuted": 0,
+  "duplicates": [],
+  "skipped": [],
+  "endpoints": [
+    {
+      "method": "POST",
+      "path": "/api/v{version}/App/GetAppsList",
+      "tag": "App",
+      "summary": null,
+      "testFile": "tests/app.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/App/GetAppDetail",
+      "tag": "App",
+      "summary": null,
+      "testFile": "tests/app.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/App/GetAppPages",
+      "tag": "App",
+      "summary": null,
+      "testFile": "tests/app.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/App/GetAppWithPages",
+      "tag": "App",
+      "summary": null,
+      "testFile": "tests/app.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Audit/GetAuditLog",
+      "tag": "Audit",
+      "summary": "Get Audit Log Data",
+      "testFile": "tests/audit.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Auth/IsDomainAccepted",
+      "tag": "Auth",
+      "summary": "To Validate is provided Domain is accepted.",
+      "testFile": "tests/auth.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Auth/ValidateUnsubscribeToken",
+      "tag": "Auth",
+      "summary": "Validate the unsubscribe token sent via digest email link.",
+      "testFile": "tests/auth.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Auth/EmailTrigger",
+      "tag": "Auth",
+      "summary": "Test Mail trigger only by sending to mail id",
+      "testFile": "tests/auth.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Auth/testDigestEmail",
+      "tag": "Auth",
+      "summary": "Test Digest Email",
+      "testFile": "tests/auth.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Auth/DecryptValue",
+      "tag": "Auth",
+      "summary": "Decrypts an encrypted value using AES encryption.",
+      "testFile": "tests/auth.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/BackupArtifactVersion/SaveUserArtifactVersionPreferences",
+      "tag": "BackupArtifactVersion",
+      "summary": "Saves or updates Backup artifact preferences for a user.",
+      "testFile": "tests/backup-artifact-version.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/BackupArtifactVersion/RemoveSelectedWorkspace",
+      "tag": "BackupArtifactVersion",
+      "summary": "Removes a selected workspace for a user.",
+      "testFile": "tests/backup-artifact-version.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/BackupArtifactVersion/GetArtifactVersionDetails",
+      "tag": "BackupArtifactVersion",
+      "summary": "Fetches backup artifact preferences for a specific user.",
+      "testFile": "tests/backup-artifact-version.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/BackupArtifactVersion/GetSelectedWorkspace",
+      "tag": "BackupArtifactVersion",
+      "summary": "Fetches backup artifact preferences Selected Workspace.",
+      "testFile": "tests/backup-artifact-version.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/BackupArtifactVersion/GetWorkspaceDetails",
+      "tag": "BackupArtifactVersion",
+      "summary": "Fetches Workspace details for specific tenant.",
+      "testFile": "tests/backup-artifact-version.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/BackupArtifactVersion/GetPagedBackupVersions",
+      "tag": "BackupArtifactVersion",
+      "summary": "Fetches paginated backup artifact versions.",
+      "testFile": "tests/backup-artifact-version.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/BackupArtifactVersion/Restore",
+      "tag": "BackupArtifactVersion",
+      "summary": "Fetches snapshot client info based on tenant, workspace, and version.",
+      "testFile": "tests/backup-artifact-version.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/BackupArtifactVersion/download",
+      "tag": "BackupArtifactVersion",
+      "summary": "Fetches snapshot client info based on tenant, workspace, and version and let user to download.",
+      "testFile": "tests/backup-artifact-version.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/BackupArtifactVersion/CheckAzureStorageConnection",
+      "tag": "BackupArtifactVersion",
+      "summary": "Checks the Azure Storage connection status for the tenant.",
+      "testFile": "tests/backup-artifact-version.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/BackupArtifactVersion/SaveBlobConnectionString",
+      "tag": "BackupArtifactVersion",
+      "summary": "Saves the blob connection string for the tenant after validating it.",
+      "testFile": "tests/backup-artifact-version.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/BackupArtifactVersion/TriggerBlobConnectionIdWebhook",
+      "tag": "BackupArtifactVersion",
+      "summary": "Triggers blob connection ID webhook with workspace ID and tenant ID from token.",
+      "testFile": "tests/backup-artifact-version.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/BackupArtifactVersion/GetBlobConnectionString",
+      "tag": "BackupArtifactVersion",
+      "summary": "Retrieves the decrypted blob connection string for the tenant from token.",
+      "testFile": "tests/backup-artifact-version.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Client/GenerateSecretNotification",
+      "tag": "Client",
+      "summary": "Retrieve report count and workspace count based on tenant ID and product code, and need to generate Email Notification.",
+      "testFile": "tests/client.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Client/GenerateEmailNotification",
+      "tag": "Client",
+      "summary": "Retrieve report count and workspace count based on tenant ID and product code, and need to generate Email Notification.",
+      "testFile": "tests/client.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Client/GenerateEmailNotificationForSecret",
+      "tag": "Client",
+      "summary": "Retrieve report count and workspace count based on tenant ID and product code, and need to generate Email Notification.",
+      "testFile": "tests/client.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/Client/GetClientConfigrations",
+      "tag": "Client",
+      "summary": "Retrieve ClientConfigrations based on tenant ID.",
+      "testFile": "tests/client.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/Client/GetReportDetails",
+      "tag": "Client",
+      "summary": "Retrieve report count and workspace count based on tenant ID and product code, along with subscription details.",
+      "testFile": "tests/client.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/Client/GetAllNotification",
+      "tag": "Client",
+      "summary": "To Get All Notification Against Tenant and User Detail.",
+      "testFile": "tests/client.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Client/MarkNotifications",
+      "tag": "Client",
+      "summary": "Marks multiple notifications as read for a given user and tenant.",
+      "testFile": "tests/client.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Client/DeleteNotifications",
+      "tag": "Client",
+      "summary": "Marks one or more notifications as deleted for a given user and tenant.",
+      "testFile": "tests/client.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/Client/IsWorkspaceExist",
+      "tag": "Client",
+      "summary": "To Verify Workspace Setup is completed.",
+      "testFile": "tests/client.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/Client/IsFirstTimeLoad",
+      "tag": "Client",
+      "summary": "To Verify Workspace Setup is completed.",
+      "testFile": "tests/client.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Client/Update",
+      "tag": "Client",
+      "summary": "Update Client Configration",
+      "testFile": "tests/client.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Client",
+      "tag": "Client",
+      "summary": "Register Client with Details",
+      "testFile": "tests/client.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Client/TriggerDataSync",
+      "tag": "Client",
+      "summary": "Trigger Azure Data Factory Pipeline for Onboarding - Step 5: Sync Data",
+      "testFile": "tests/client.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/Client/GetSyncStatus",
+      "tag": "Client",
+      "summary": "Get Data Sync Status with ADF Pipeline Logs for Step 5 - Onboarding",
+      "testFile": "tests/client.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Client/CheckSecretExpiry",
+      "tag": "Client",
+      "summary": "To get App Client seacret expiry.",
+      "testFile": "tests/client.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetWorkspacesWithCounts",
+      "tag": "DashboardDetail",
+      "summary": "Get paginated workspaces with report, dataset, and dataflow counts",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetReportsList",
+      "tag": "DashboardDetail",
+      "summary": "Get paginated list of reports with workspace information",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetDatasetsList",
+      "tag": "DashboardDetail",
+      "summary": "Get paginated list of datasets with workspace and configuration information",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetDataflowsList",
+      "tag": "DashboardDetail",
+      "summary": "Get paginated list of dataflows with workspace information",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetDashboardsList",
+      "tag": "DashboardDetail",
+      "summary": "Get paginated list of dashboards with workspace and publication information",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetDashboardTiles",
+      "tag": "DashboardDetail",
+      "summary": "Get tiles for a specific dashboard with source report information",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetDashboardSourceReports",
+      "tag": "DashboardDetail",
+      "summary": "Get source reports pinned in a dashboard",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetDashboardAppInfo",
+      "tag": "DashboardDetail",
+      "summary": "Get app publication information if dashboard is published to an app",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetDashboardMetadata",
+      "tag": "DashboardDetail",
+      "summary": "Get dashboard metadata including created date, tile count, and source report count",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetDashboardDetail",
+      "tag": "DashboardDetail",
+      "summary": "Get complete dashboard detail including metadata, tiles, source reports, and app information",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetDuplicateReports",
+      "tag": "DashboardDetail",
+      "summary": "Get reports with duplicate names showing workspaces and counts",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetDuplicateDatasets",
+      "tag": "DashboardDetail",
+      "summary": "Get datasets with duplicate names showing workspaces and counts",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetDuplicateDataflows",
+      "tag": "DashboardDetail",
+      "summary": "Get dataflows with duplicate names showing workspaces and counts",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetGatewaysList",
+      "tag": "DashboardDetail",
+      "summary": "Get paginated list of gateways with online/offline status",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetBackupsList",
+      "tag": "DashboardDetail",
+      "summary": "Get paginated list of artifact backups with version information",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/DashboardDetail/GetOverdueMissingBackupsCount",
+      "tag": "DashboardDetail",
+      "summary": "Get total count of overdue and never-backed-up artifacts",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetOverdueMissingBackupsList",
+      "tag": "DashboardDetail",
+      "summary": "Get paginated list of overdue and never-backed-up artifacts with filtering",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/DashboardDetail/GetFailedBackupsCount",
+      "tag": "DashboardDetail",
+      "summary": "Get count of artifacts with failed backup attempts",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetFailedBackupsList",
+      "tag": "DashboardDetail",
+      "summary": "Get paginated list of artifacts with failed backup attempts",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/DashboardDetail/GetBackupManagementSummary",
+      "tag": "DashboardDetail",
+      "summary": "Get backup management summary with eligible/protected counts and coverage percentage",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetDatasetRefreshesByStatus",
+      "tag": "DashboardDetail",
+      "summary": "Get paginated dataset refresh history with status filtering (Success/Failed/LongRunning/Scheduled/Unscheduled)",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetUsersList",
+      "tag": "DashboardDetail",
+      "summary": "Get paginated list of workspace users with filtering and sorting",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetExpiringSoonBackupsList",
+      "tag": "DashboardDetail",
+      "summary": "Get backups expiring within specified days (default 14 days)",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetFailedDatasetRefreshesList",
+      "tag": "DashboardDetail",
+      "summary": "Get all failed dataset refreshes with optional date range filtering",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetInactiveDatasetsList",
+      "tag": "DashboardDetail",
+      "summary": "Get datasets with no refresh activity in specified days (default 30 days)",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetOnDemandDatasetRefreshesList",
+      "tag": "DashboardDetail",
+      "summary": "Get all on-demand (manual) dataset refreshes with optional date range filtering",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetScheduledDatasetRefreshesList",
+      "tag": "DashboardDetail",
+      "summary": "Get all scheduled (automatic) dataset refreshes with optional date range filtering",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetSuccessfulDatasetRefreshesList",
+      "tag": "DashboardDetail",
+      "summary": "Get all successful (completed) dataset refreshes with optional date range filtering",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetLongRunningDatasetRefreshesList",
+      "tag": "DashboardDetail",
+      "summary": "Get all long-running dataset refreshes with optional date range and threshold filtering",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetWorkspaceUsers",
+      "tag": "DashboardDetail",
+      "summary": "Get all users for a specific workspace with their roles",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetWorkspaceReports",
+      "tag": "DashboardDetail",
+      "summary": "Get all reports for a specific workspace",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetWorkspaceDatasets",
+      "tag": "DashboardDetail",
+      "summary": "Get all datasets for a specific workspace with refresh status",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetWorkspaceDataflows",
+      "tag": "DashboardDetail",
+      "summary": "Get all dataflows for a specific workspace with refresh status",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetDatasetRefreshHistory",
+      "tag": "DashboardDetail",
+      "summary": "Get all refresh history for a specific dataset",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetDatasetUsers",
+      "tag": "DashboardDetail",
+      "summary": "Get all users with access to a specific dataset",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetDatasetDetails",
+      "tag": "DashboardDetail",
+      "summary": "Get detailed information for a specific dataset",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetDataflowRefreshHistory",
+      "tag": "DashboardDetail",
+      "summary": "Get all refresh history for a specific dataflow",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetDataflowDetails",
+      "tag": "DashboardDetail",
+      "summary": "Get detailed information for a specific dataflow",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetReportDetails",
+      "tag": "DashboardDetail",
+      "summary": "Get detailed information for a specific report",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DashboardDetail/GetUserWorkspaces",
+      "tag": "DashboardDetail",
+      "summary": "Get all workspaces for a specific user",
+      "testFile": "tests/dashboard-detail.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DigestAdmin/SendOnDemand",
+      "tag": "DigestAdmin",
+      "summary": "Send an on-demand digest email to a specific recipient",
+      "testFile": "tests/digest-admin.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DigestAdmin/GetAuditLog",
+      "tag": "DigestAdmin",
+      "summary": "Get the digest email audit log with filters",
+      "testFile": "tests/digest-admin.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/DigestAdmin/GetEmailSnapshot/{logId}",
+      "tag": "DigestAdmin",
+      "summary": "Get the HTML snapshot of a sent digest email",
+      "testFile": "tests/digest-admin.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DigestEmail/SaveUserPreferences",
+      "tag": "DigestEmail",
+      "summary": "Saves or updates notification preferences for a user.",
+      "testFile": "tests/digest-email.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/DigestEmail/GetDigestUserDetails",
+      "tag": "DigestEmail",
+      "summary": "Fetches notification preferences for a specific user.",
+      "testFile": "tests/digest-email.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DigestEmail/UnsubscribeDigestEmail",
+      "tag": "DigestEmail",
+      "summary": "Unsubscribes a user from digest email scheduler.",
+      "testFile": "tests/digest-email.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DowntimeLog/GetDowntimeList",
+      "tag": "DowntimeLog",
+      "summary": "Get DownTime Log Data",
+      "testFile": "tests/downtime-log.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DowntimeLog/GetAllGatewayList",
+      "tag": "DowntimeLog",
+      "summary": "Get all gateway list by tenant id",
+      "testFile": "tests/downtime-log.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/DowntimeLog/GetAllDatasourceList",
+      "tag": "DowntimeLog",
+      "summary": "Get all datasource list by tenant id",
+      "testFile": "tests/downtime-log.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Gateway/GetGatewaySummary",
+      "tag": "Gateway",
+      "summary": "Get Gateway Summary",
+      "testFile": "tests/gateway.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Gateway/GetGatewayList",
+      "tag": "Gateway",
+      "summary": "Get Gateway List",
+      "testFile": "tests/gateway.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Gateway/GetGatewayDataSources",
+      "tag": "Gateway",
+      "summary": "Get DataSources for a Gateway",
+      "testFile": "tests/gateway.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Governance/GetPublicWebFindings",
+      "tag": "Governance",
+      "summary": "Get Published to Public Web findings",
+      "testFile": "tests/governance.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Governance/GetPublicWebFindingDetail",
+      "tag": "Governance",
+      "summary": "Get detail for one Published to Public Web finding by id",
+      "testFile": "tests/governance.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Governance/GetExternalGuestUserActivity",
+      "tag": "Governance",
+      "summary": "Get External User Activity (Guest) findings",
+      "testFile": "tests/governance.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Governance/GetExternalGuestUserActivityDetail",
+      "tag": "Governance",
+      "summary": "Get detail for one External User Activity (Guest) finding by id",
+      "testFile": "tests/governance.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/Governance/shared-report-findings",
+      "tag": "Governance",
+      "summary": "Get paginated shared report exposure findings",
+      "testFile": "tests/governance.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/Governance/all-findings",
+      "tag": "Governance",
+      "summary": "Get all findings (unified Governance + Sharing)",
+      "testFile": "tests/governance.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/GrowthAnalytics/GetSummaryDashboardSnapshotList",
+      "tag": "GrowthAnalytics",
+      "summary": "Get historical summary dashboard snapshots for growth and trend analysis",
+      "testFile": "tests/growth-analytics.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/LineageExplorer/GetLineageData",
+      "tag": "LineageExplorer",
+      "summary": "Get comprehensive lineage data for selected workspaces",
+      "testFile": "tests/lineage-explorer.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/LineageExplorer/GetDatasetSchema",
+      "tag": "LineageExplorer",
+      "summary": "Get schema for a single dataset",
+      "testFile": "tests/lineage-explorer.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/LineageExplorer/health",
+      "tag": "LineageExplorer",
+      "summary": "Health check for lineage explorer service",
+      "testFile": "tests/lineage-explorer.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/LineageExplorer/GetArtifacts",
+      "tag": "LineageExplorer",
+      "summary": "Lightweight artifact listing for initial page load",
+      "testFile": "tests/lineage-explorer.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/LineageExplorer/GetArtifactNeighborhood",
+      "tag": "LineageExplorer",
+      "summary": "Get full lineage (upstream + downstream) for an artifact",
+      "testFile": "tests/lineage-explorer.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/LineageExplorer/GetImpactAnalysis",
+      "tag": "LineageExplorer",
+      "summary": "Get full impact analysis for a node",
+      "testFile": "tests/lineage-explorer.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/LineageExplorer/GetScanHistory",
+      "tag": "LineageExplorer",
+      "summary": "Get recent metadata-scan history (paged)",
+      "testFile": "tests/lineage-explorer.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/LineageExplorer/GetArtifactDetail",
+      "tag": "LineageExplorer",
+      "summary": "Lightweight artifact listing for initial page load",
+      "testFile": "tests/lineage-explorer.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/LineageExplorer/GetNodeDetails/{nodeSourceKey}",
+      "tag": "LineageExplorer",
+      "summary": "Get detailed information for a specific lineage node",
+      "testFile": "tests/lineage-explorer.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/LineageExplorer/GetWorkspaceLineage",
+      "tag": "LineageExplorer",
+      "summary": "Get workspace-wide lineage traversal",
+      "testFile": "tests/lineage-explorer.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/LineageExplorer/GetDataflowMetadata",
+      "tag": "LineageExplorer",
+      "summary": "Get metadata for a single dataflow",
+      "testFile": "tests/lineage-explorer.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/LineageExplorer/GetDataflowSchema",
+      "tag": "LineageExplorer",
+      "summary": "Get dataflow entities and columns schema",
+      "testFile": "tests/lineage-explorer.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/Onboarding/GetStatus",
+      "tag": "Onboarding",
+      "summary": null,
+      "testFile": "tests/onboarding.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Onboarding/StartSession",
+      "tag": "Onboarding",
+      "summary": null,
+      "testFile": "tests/onboarding.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Onboarding/ValidateAzureCredentials",
+      "tag": "Onboarding",
+      "summary": null,
+      "testFile": "tests/onboarding.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Onboarding/ValidateSecurityGroup",
+      "tag": "Onboarding",
+      "summary": null,
+      "testFile": "tests/onboarding.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Onboarding/VerifyFabricSettings",
+      "tag": "Onboarding",
+      "summary": null,
+      "testFile": "tests/onboarding.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/Onboarding/GetSecurityGroupObjectId",
+      "tag": "Onboarding",
+      "summary": null,
+      "testFile": "tests/onboarding.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/Onboarding/GetStepData",
+      "tag": "Onboarding",
+      "summary": null,
+      "testFile": "tests/onboarding.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Onboarding/DownloadScript",
+      "tag": "Onboarding",
+      "summary": null,
+      "testFile": "tests/onboarding.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Onboarding/VerifyScriptExecution",
+      "tag": "Onboarding",
+      "summary": null,
+      "testFile": "tests/onboarding.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Onboarding/InitiateWorkspaceSync",
+      "tag": "Onboarding",
+      "summary": null,
+      "testFile": "tests/onboarding.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/Onboarding/GetSyncStatus",
+      "tag": "Onboarding",
+      "summary": null,
+      "testFile": "tests/onboarding.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Onboarding/CompleteStep",
+      "tag": "Onboarding",
+      "summary": null,
+      "testFile": "tests/onboarding.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Onboarding/ReportError",
+      "tag": "Onboarding",
+      "summary": null,
+      "testFile": "tests/onboarding.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/Onboarding/DebugClaims",
+      "tag": "Onboarding",
+      "summary": null,
+      "testFile": "tests/onboarding.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/PlanConfig/GetMinimumBackup",
+      "tag": "PlanConfig",
+      "summary": "Get minimum backup value by tenant id.",
+      "testFile": "tests/plan-config.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/RefreshHealth/runs",
+      "tag": "RefreshHealth",
+      "summary": "Get refresh runs",
+      "testFile": "tests/refresh-health.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v{version}/RefreshHealth/run-detail",
+      "tag": "RefreshHealth",
+      "summary": "Get refresh run detail",
+      "testFile": "tests/refresh-health.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/RefreshHealthMonitor/GetRefreshHealthReport",
+      "tag": "RefreshHealthMonitor",
+      "summary": "Get dataset refresh health report",
+      "testFile": "tests/refresh-health-monitor.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/Report/GetEmbedInfo",
+      "tag": "Report",
+      "summary": "Get Embed Details for Report to the client.",
+      "testFile": "tests/report.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/ReportsAndDashboards/GetReportsAndDashboards",
+      "tag": "ReportsAndDashboards",
+      "summary": null,
+      "testFile": "tests/reports-and-dashboards.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/SummaryDashboard/GetArtifactCounts",
+      "tag": "SummaryDashboard",
+      "summary": "Get tenant artifact counts including workspaces, reports, datasets, dataflows, users, gateways, and backups",
+      "testFile": "tests/summary-dashboard.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/SummaryDashboard/GetRefreshStatistics",
+      "tag": "SummaryDashboard",
+      "summary": "Get dataset refresh statistics including success/failure rates, long-running refreshes, and inactive datasets",
+      "testFile": "tests/summary-dashboard.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/SummaryDashboard/GetMostActiveReports",
+      "tag": "SummaryDashboard",
+      "summary": "Get most active reports based on view count, unique users, and activity",
+      "testFile": "tests/summary-dashboard.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/SummaryDashboard/GetMostActiveWorkspaces",
+      "tag": "SummaryDashboard",
+      "summary": "Get most active workspaces based on views, report modifications, and dataset refreshes",
+      "testFile": "tests/summary-dashboard.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/SummaryDashboard/GetDataflowRefreshStatistics",
+      "tag": "SummaryDashboard",
+      "summary": "Get dataflow refresh statistics including success/failure rates and average duration",
+      "testFile": "tests/summary-dashboard.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/SummaryDashboard/GetRefreshPerformanceStatistics",
+      "tag": "SummaryDashboard",
+      "summary": "Get unified refresh performance statistics for datasets, dataflows, or all refreshes",
+      "testFile": "tests/summary-dashboard.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/SummaryDashboard/GetDatasetRefreshStatisticsSummary",
+      "tag": "SummaryDashboard",
+      "summary": "Get dataset refresh statistics including success/failure rates and average duration",
+      "testFile": "tests/summary-dashboard.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/SummaryDashboard/GetReportStatisticsSummary",
+      "tag": "SummaryDashboard",
+      "summary": "Get report statistics including total reports, pages, and unique datasets",
+      "testFile": "tests/summary-dashboard.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/SummaryDashboard/GetUserRoleBreakdown",
+      "tag": "SummaryDashboard",
+      "summary": "Get user role breakdown by Admin, Member, Contributor, and Viewer",
+      "testFile": "tests/summary-dashboard.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/SummaryDashboard/GetOperationalHealthRefreshStats",
+      "tag": "SummaryDashboard",
+      "summary": "Get operational health refresh statistics for failed datasets and dataflows",
+      "testFile": "tests/summary-dashboard.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/SummaryDashboard/GetFailedRefreshesList",
+      "tag": "SummaryDashboard",
+      "summary": "Get detailed list of failed dataset and dataflow refreshes",
+      "testFile": "tests/summary-dashboard.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/SummaryDashboard/GetLongRunningRefreshes",
+      "tag": "SummaryDashboard",
+      "summary": "Get long running dataset and dataflow refreshes",
+      "testFile": "tests/summary-dashboard.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/TenantExplorer/GetDatasetsByWorkspace",
+      "tag": "TenantExplorer",
+      "summary": "Get datasets within a workspace with last refresh status",
+      "testFile": "tests/tenant-explorer.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/TenantExplorer/GetDataflowsByWorkspace",
+      "tag": "TenantExplorer",
+      "summary": "Get dataflows within a workspace with last refresh status",
+      "testFile": "tests/tenant-explorer.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/TenantExplorer/GetReportsByWorkspace",
+      "tag": "TenantExplorer",
+      "summary": "Get reports within a workspace",
+      "testFile": "tests/tenant-explorer.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/TenantExplorer/GetUsersByWorkspace",
+      "tag": "TenantExplorer",
+      "summary": "Get users with access to a workspace",
+      "testFile": "tests/tenant-explorer.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/TenantExplorer/GetUserWorkspaceFootprint",
+      "tag": "TenantExplorer",
+      "summary": "Get all workspaces accessible by a user",
+      "testFile": "tests/tenant-explorer.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/TenantExplorer/GetDatasetRefreshHistory",
+      "tag": "TenantExplorer",
+      "summary": "Get refresh history for a dataset (7-365 days)",
+      "testFile": "tests/tenant-explorer.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/TenantExplorer/GetDataflowRefreshHistory",
+      "tag": "TenantExplorer",
+      "summary": "Get refresh history for a dataflow (7-365 days)",
+      "testFile": "tests/tenant-explorer.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/TenantExplorer/GetReportPagesByReport",
+      "tag": "TenantExplorer",
+      "summary": "Get all pages within a report",
+      "testFile": "tests/tenant-explorer.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/TenantExplorer/GetDatasetUsersByDataset",
+      "tag": "TenantExplorer",
+      "summary": "Get users with dataset-level permissions",
+      "testFile": "tests/tenant-explorer.spec.js",
+      "status": "failed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/TenantExplorer/GetMostActiveDatasets",
+      "tag": "TenantExplorer",
+      "summary": "Get top N most active datasets (analytics)",
+      "testFile": "tests/tenant-explorer.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/TenantExplorer/GetMostActiveDataflows",
+      "tag": "TenantExplorer",
+      "summary": "Get top N most active dataflows (analytics)",
+      "testFile": "tests/tenant-explorer.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/TenantExplorer/GetMostActiveItems",
+      "tag": "TenantExplorer",
+      "summary": "Get top N most active items by type (unified endpoint)",
+      "testFile": "tests/tenant-explorer.spec.js",
+      "status": "passed"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v{version}/TenantExplorer/GetWorkspaceActivityLog",
+      "tag": "TenantExplorer",
+      "summary": "Get unified activity log for a workspace",
+      "testFile": "tests/tenant-explorer.spec.js",
+      "status": "passed"
+    }
+  ],
+  "coveragePercent": 100
+}
