@@ -14,12 +14,12 @@ copy .env.example .env   # fill in AUTH_TOKEN to run authenticated checks
 ## Run
 
 ```bash
-npm run test:api
-npm run allure:generate
-npm run allure:open
+npm run test
+npm run report
 ```
 
-`npm run test:api` runs the suite then regenerates `endpoint-coverage.json` / `endpoint-coverage.md` (via `scripts/run-and-report.js`, which always runs the report step even if tests fail).
+`npm run test` (`npm run test:api`) runs the suite then regenerates `endpoint-coverage.json` / `endpoint-coverage.md` (via `scripts/run-and-report.js`, which always runs the report step even if tests fail).
+`npm run report` / `npm run report:offline` generates an offline, single-file Allure report at `allure-report/index.html` that can be opened directly from File Explorer without running a local server.
 Run `npm run coverage:report` to regenerate them standalone without running tests.
 
 ## Environment variables

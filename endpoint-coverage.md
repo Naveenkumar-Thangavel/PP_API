@@ -2,14 +2,14 @@
 
 - Total Swagger operations: 153
 - Executed: 153
-- Passed: 84
-- Failed: 69
+- Passed: 95
+- Failed: 58
 - Not executed: 0
 - Coverage: 100% (Executed / Total)
 
 | Module | Test File | Method | Path | Executed | Status |
 |---|---|---|---|---|---|
-| App | tests/app.spec.js | POST | /api/v{version}/App/GetAppsList | yes | failed |
+| App | tests/app.spec.js | POST | /api/v{version}/App/GetAppsList | yes | passed |
 | App | tests/app.spec.js | POST | /api/v{version}/App/GetAppDetail | yes | failed |
 | App | tests/app.spec.js | POST | /api/v{version}/App/GetAppPages | yes | passed |
 | App | tests/app.spec.js | POST | /api/v{version}/App/GetAppWithPages | yes | failed |
@@ -17,15 +17,15 @@
 | Auth | tests/auth.spec.js | POST | /api/v{version}/Auth/IsDomainAccepted | yes | failed |
 | Auth | tests/auth.spec.js | POST | /api/v{version}/Auth/ValidateUnsubscribeToken | yes | failed |
 | Auth | tests/auth.spec.js | POST | /api/v{version}/Auth/EmailTrigger | yes | failed |
-| Auth | tests/auth.spec.js | POST | /api/v{version}/Auth/testDigestEmail | yes | passed |
+| Auth | tests/auth.spec.js | POST | /api/v{version}/Auth/testDigestEmail | yes | failed |
 | Auth | tests/auth.spec.js | POST | /api/v{version}/Auth/DecryptValue | yes | failed |
 | BackupArtifactVersion | tests/backup-artifact-version.spec.js | POST | /api/v{version}/BackupArtifactVersion/SaveUserArtifactVersionPreferences | yes | failed |
-| BackupArtifactVersion | tests/backup-artifact-version.spec.js | POST | /api/v{version}/BackupArtifactVersion/RemoveSelectedWorkspace | yes | failed |
+| BackupArtifactVersion | tests/backup-artifact-version.spec.js | POST | /api/v{version}/BackupArtifactVersion/RemoveSelectedWorkspace | yes | passed |
 | BackupArtifactVersion | tests/backup-artifact-version.spec.js | GET | /api/v{version}/BackupArtifactVersion/GetArtifactVersionDetails | yes | passed |
 | BackupArtifactVersion | tests/backup-artifact-version.spec.js | POST | /api/v{version}/BackupArtifactVersion/GetSelectedWorkspace | yes | passed |
 | BackupArtifactVersion | tests/backup-artifact-version.spec.js | GET | /api/v{version}/BackupArtifactVersion/GetWorkspaceDetails | yes | passed |
-| BackupArtifactVersion | tests/backup-artifact-version.spec.js | POST | /api/v{version}/BackupArtifactVersion/GetPagedBackupVersions | yes | failed |
-| BackupArtifactVersion | tests/backup-artifact-version.spec.js | POST | /api/v{version}/BackupArtifactVersion/Restore | yes | failed |
+| BackupArtifactVersion | tests/backup-artifact-version.spec.js | POST | /api/v{version}/BackupArtifactVersion/GetPagedBackupVersions | yes | passed |
+| BackupArtifactVersion | tests/backup-artifact-version.spec.js | POST | /api/v{version}/BackupArtifactVersion/Restore | yes | passed |
 | BackupArtifactVersion | tests/backup-artifact-version.spec.js | POST | /api/v{version}/BackupArtifactVersion/download | yes | failed |
 | BackupArtifactVersion | tests/backup-artifact-version.spec.js | GET | /api/v{version}/BackupArtifactVersion/CheckAzureStorageConnection | yes | passed |
 | BackupArtifactVersion | tests/backup-artifact-version.spec.js | POST | /api/v{version}/BackupArtifactVersion/SaveBlobConnectionString | yes | failed |
@@ -33,7 +33,7 @@
 | BackupArtifactVersion | tests/backup-artifact-version.spec.js | GET | /api/v{version}/BackupArtifactVersion/GetBlobConnectionString | yes | failed |
 | Client | tests/client.spec.js | POST | /api/v{version}/Client/GenerateSecretNotification | yes | passed |
 | Client | tests/client.spec.js | POST | /api/v{version}/Client/GenerateEmailNotification | yes | failed |
-| Client | tests/client.spec.js | POST | /api/v{version}/Client/GenerateEmailNotificationForSecret | yes | passed |
+| Client | tests/client.spec.js | POST | /api/v{version}/Client/GenerateEmailNotificationForSecret | yes | failed |
 | Client | tests/client.spec.js | GET | /api/v{version}/Client/GetClientConfigrations | yes | passed |
 | Client | tests/client.spec.js | GET | /api/v{version}/Client/GetReportDetails | yes | passed |
 | Client | tests/client.spec.js | GET | /api/v{version}/Client/GetAllNotification | yes | passed |
@@ -62,9 +62,9 @@
 | DashboardDetail | tests/dashboard-detail.spec.js | POST | /api/v{version}/DashboardDetail/GetGatewaysList | yes | passed |
 | DashboardDetail | tests/dashboard-detail.spec.js | POST | /api/v{version}/DashboardDetail/GetBackupsList | yes | passed |
 | DashboardDetail | tests/dashboard-detail.spec.js | GET | /api/v{version}/DashboardDetail/GetOverdueMissingBackupsCount | yes | passed |
-| DashboardDetail | tests/dashboard-detail.spec.js | POST | /api/v{version}/DashboardDetail/GetOverdueMissingBackupsList | yes | failed |
+| DashboardDetail | tests/dashboard-detail.spec.js | POST | /api/v{version}/DashboardDetail/GetOverdueMissingBackupsList | yes | passed |
 | DashboardDetail | tests/dashboard-detail.spec.js | GET | /api/v{version}/DashboardDetail/GetFailedBackupsCount | yes | passed |
-| DashboardDetail | tests/dashboard-detail.spec.js | POST | /api/v{version}/DashboardDetail/GetFailedBackupsList | yes | failed |
+| DashboardDetail | tests/dashboard-detail.spec.js | POST | /api/v{version}/DashboardDetail/GetFailedBackupsList | yes | passed |
 | DashboardDetail | tests/dashboard-detail.spec.js | GET | /api/v{version}/DashboardDetail/GetBackupManagementSummary | yes | passed |
 | DashboardDetail | tests/dashboard-detail.spec.js | POST | /api/v{version}/DashboardDetail/GetDatasetRefreshesByStatus | yes | passed |
 | DashboardDetail | tests/dashboard-detail.spec.js | POST | /api/v{version}/DashboardDetail/GetUsersList | yes | passed |
@@ -95,8 +95,8 @@
 | DowntimeLog | tests/downtime-log.spec.js | POST | /api/v{version}/DowntimeLog/GetDowntimeList | yes | passed |
 | DowntimeLog | tests/downtime-log.spec.js | POST | /api/v{version}/DowntimeLog/GetAllGatewayList | yes | passed |
 | DowntimeLog | tests/downtime-log.spec.js | POST | /api/v{version}/DowntimeLog/GetAllDatasourceList | yes | passed |
-| Gateway | tests/gateway.spec.js | POST | /api/v{version}/Gateway/GetGatewaySummary | yes | failed |
-| Gateway | tests/gateway.spec.js | POST | /api/v{version}/Gateway/GetGatewayList | yes | failed |
+| Gateway | tests/gateway.spec.js | POST | /api/v{version}/Gateway/GetGatewaySummary | yes | passed |
+| Gateway | tests/gateway.spec.js | POST | /api/v{version}/Gateway/GetGatewayList | yes | passed |
 | Gateway | tests/gateway.spec.js | POST | /api/v{version}/Gateway/GetGatewayDataSources | yes | failed |
 | Governance | tests/governance.spec.js | POST | /api/v{version}/Governance/GetPublicWebFindings | yes | passed |
 | Governance | tests/governance.spec.js | POST | /api/v{version}/Governance/GetPublicWebFindingDetail | yes | failed |
@@ -104,17 +104,17 @@
 | Governance | tests/governance.spec.js | POST | /api/v{version}/Governance/GetExternalGuestUserActivityDetail | yes | failed |
 | Governance | tests/governance.spec.js | GET | /api/v{version}/Governance/shared-report-findings | yes | failed |
 | Governance | tests/governance.spec.js | GET | /api/v{version}/Governance/all-findings | yes | passed |
-| GrowthAnalytics | tests/growth-analytics.spec.js | POST | /api/v{version}/GrowthAnalytics/GetSummaryDashboardSnapshotList | yes | failed |
+| GrowthAnalytics | tests/growth-analytics.spec.js | POST | /api/v{version}/GrowthAnalytics/GetSummaryDashboardSnapshotList | yes | passed |
 | LineageExplorer | tests/lineage-explorer.spec.js | POST | /api/v{version}/LineageExplorer/GetLineageData | yes | failed |
-| LineageExplorer | tests/lineage-explorer.spec.js | GET | /api/v{version}/LineageExplorer/GetDatasetSchema | yes | failed |
+| LineageExplorer | tests/lineage-explorer.spec.js | GET | /api/v{version}/LineageExplorer/GetDatasetSchema | yes | passed |
 | LineageExplorer | tests/lineage-explorer.spec.js | GET | /api/v{version}/LineageExplorer/health | yes | passed |
 | LineageExplorer | tests/lineage-explorer.spec.js | POST | /api/v{version}/LineageExplorer/GetArtifacts | yes | failed |
-| LineageExplorer | tests/lineage-explorer.spec.js | GET | /api/v{version}/LineageExplorer/GetArtifactNeighborhood | yes | failed |
+| LineageExplorer | tests/lineage-explorer.spec.js | GET | /api/v{version}/LineageExplorer/GetArtifactNeighborhood | yes | passed |
 | LineageExplorer | tests/lineage-explorer.spec.js | POST | /api/v{version}/LineageExplorer/GetImpactAnalysis | yes | failed |
 | LineageExplorer | tests/lineage-explorer.spec.js | POST | /api/v{version}/LineageExplorer/GetScanHistory | yes | passed |
-| LineageExplorer | tests/lineage-explorer.spec.js | POST | /api/v{version}/LineageExplorer/GetArtifactDetail | yes | failed |
+| LineageExplorer | tests/lineage-explorer.spec.js | POST | /api/v{version}/LineageExplorer/GetArtifactDetail | yes | passed |
 | LineageExplorer | tests/lineage-explorer.spec.js | GET | /api/v{version}/LineageExplorer/GetNodeDetails/{nodeSourceKey} | yes | failed |
-| LineageExplorer | tests/lineage-explorer.spec.js | GET | /api/v{version}/LineageExplorer/GetWorkspaceLineage | yes | failed |
+| LineageExplorer | tests/lineage-explorer.spec.js | GET | /api/v{version}/LineageExplorer/GetWorkspaceLineage | yes | passed |
 | LineageExplorer | tests/lineage-explorer.spec.js | GET | /api/v{version}/LineageExplorer/GetDataflowMetadata | yes | failed |
 | LineageExplorer | tests/lineage-explorer.spec.js | GET | /api/v{version}/LineageExplorer/GetDataflowSchema | yes | failed |
 | Onboarding | tests/onboarding.spec.js | GET | /api/v{version}/Onboarding/GetStatus | yes | passed |
@@ -130,12 +130,12 @@
 | Onboarding | tests/onboarding.spec.js | GET | /api/v{version}/Onboarding/GetSyncStatus | yes | passed |
 | Onboarding | tests/onboarding.spec.js | POST | /api/v{version}/Onboarding/CompleteStep | yes | failed |
 | Onboarding | tests/onboarding.spec.js | POST | /api/v{version}/Onboarding/ReportError | yes | failed |
-| Onboarding | tests/onboarding.spec.js | GET | /api/v{version}/Onboarding/DebugClaims | yes | passed |
+| Onboarding | tests/onboarding.spec.js | GET | /api/v{version}/Onboarding/DebugClaims | yes | failed |
 | PlanConfig | tests/plan-config.spec.js | POST | /api/v{version}/PlanConfig/GetMinimumBackup | yes | failed |
 | RefreshHealth | tests/refresh-health.spec.js | GET | /api/v{version}/RefreshHealth/runs | yes | passed |
 | RefreshHealth | tests/refresh-health.spec.js | GET | /api/v{version}/RefreshHealth/run-detail | yes | failed |
 | RefreshHealthMonitor | tests/refresh-health-monitor.spec.js | POST | /api/v{version}/RefreshHealthMonitor/GetRefreshHealthReport | yes | passed |
-| Report | tests/report.spec.js | POST | /api/v{version}/Report/GetEmbedInfo | yes | failed |
+| Report | tests/report.spec.js | POST | /api/v{version}/Report/GetEmbedInfo | yes | passed |
 | ReportsAndDashboards | tests/reports-and-dashboards.spec.js | POST | /api/v{version}/ReportsAndDashboards/GetReportsAndDashboards | yes | passed |
 | SummaryDashboard | tests/summary-dashboard.spec.js | POST | /api/v{version}/SummaryDashboard/GetArtifactCounts | yes | passed |
 | SummaryDashboard | tests/summary-dashboard.spec.js | POST | /api/v{version}/SummaryDashboard/GetRefreshStatistics | yes | passed |

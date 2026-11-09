@@ -25,7 +25,12 @@ function captureContext(context, body) {
 function applyContext(context, data) {
   if (!data || typeof data !== 'object') return;
   for (const key of Object.keys(data)) {
-    if (context[key] !== undefined) data[key] = context[key];
+    if (
+      context[key] !== undefined &&
+      (data[key] === 'synthetic-automation-value' || data[key] === 1)
+    ) {
+      data[key] = context[key];
+    }
   }
 }
 

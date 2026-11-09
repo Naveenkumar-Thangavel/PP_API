@@ -1,8 +1,8 @@
 {
   "total": 153,
   "executed": 153,
-  "passed": 84,
-  "failed": 69,
+  "passed": 95,
+  "failed": 58,
   "notExecuted": 0,
   "duplicates": [],
   "skipped": [],
@@ -13,7 +13,7 @@
       "tag": "App",
       "summary": null,
       "testFile": "tests/app.spec.js",
-      "status": "failed"
+      "status": "passed"
     },
     {
       "method": "POST",
@@ -77,7 +77,7 @@
       "tag": "Auth",
       "summary": "Test Digest Email",
       "testFile": "tests/auth.spec.js",
-      "status": "passed"
+      "status": "failed"
     },
     {
       "method": "POST",
@@ -101,7 +101,7 @@
       "tag": "BackupArtifactVersion",
       "summary": "Removes a selected workspace for a user.",
       "testFile": "tests/backup-artifact-version.spec.js",
-      "status": "failed"
+      "status": "passed"
     },
     {
       "method": "GET",
@@ -133,7 +133,7 @@
       "tag": "BackupArtifactVersion",
       "summary": "Fetches paginated backup artifact versions.",
       "testFile": "tests/backup-artifact-version.spec.js",
-      "status": "failed"
+      "status": "passed"
     },
     {
       "method": "POST",
@@ -141,7 +141,7 @@
       "tag": "BackupArtifactVersion",
       "summary": "Fetches snapshot client info based on tenant, workspace, and version.",
       "testFile": "tests/backup-artifact-version.spec.js",
-      "status": "failed"
+      "status": "passed"
     },
     {
       "method": "POST",
@@ -205,7 +205,7 @@
       "tag": "Client",
       "summary": "Retrieve report count and workspace count based on tenant ID and product code, and need to generate Email Notification.",
       "testFile": "tests/client.spec.js",
-      "status": "passed"
+      "status": "failed"
     },
     {
       "method": "GET",
@@ -437,7 +437,7 @@
       "tag": "DashboardDetail",
       "summary": "Get paginated list of overdue and never-backed-up artifacts with filtering",
       "testFile": "tests/dashboard-detail.spec.js",
-      "status": "failed"
+      "status": "passed"
     },
     {
       "method": "GET",
@@ -453,7 +453,7 @@
       "tag": "DashboardDetail",
       "summary": "Get paginated list of artifacts with failed backup attempts",
       "testFile": "tests/dashboard-detail.spec.js",
-      "status": "failed"
+      "status": "passed"
     },
     {
       "method": "GET",
@@ -701,7 +701,7 @@
       "tag": "Gateway",
       "summary": "Get Gateway Summary",
       "testFile": "tests/gateway.spec.js",
-      "status": "failed"
+      "status": "passed"
     },
     {
       "method": "POST",
@@ -709,7 +709,7 @@
       "tag": "Gateway",
       "summary": "Get Gateway List",
       "testFile": "tests/gateway.spec.js",
-      "status": "failed"
+      "status": "passed"
     },
     {
       "method": "POST",
@@ -773,7 +773,7 @@
       "tag": "GrowthAnalytics",
       "summary": "Get historical summary dashboard snapshots for growth and trend analysis",
       "testFile": "tests/growth-analytics.spec.js",
-      "status": "failed"
+      "status": "passed"
     },
     {
       "method": "POST",
@@ -789,7 +789,7 @@
       "tag": "LineageExplorer",
       "summary": "Get schema for a single dataset",
       "testFile": "tests/lineage-explorer.spec.js",
-      "status": "failed"
+      "status": "passed"
     },
     {
       "method": "GET",
@@ -813,7 +813,7 @@
       "tag": "LineageExplorer",
       "summary": "Get full lineage (upstream + downstream) for an artifact",
       "testFile": "tests/lineage-explorer.spec.js",
-      "status": "failed"
+      "status": "passed"
     },
     {
       "method": "POST",
@@ -837,7 +837,7 @@
       "tag": "LineageExplorer",
       "summary": "Lightweight artifact listing for initial page load",
       "testFile": "tests/lineage-explorer.spec.js",
-      "status": "failed"
+      "status": "passed"
     },
     {
       "method": "GET",
@@ -853,7 +853,7 @@
       "tag": "LineageExplorer",
       "summary": "Get workspace-wide lineage traversal",
       "testFile": "tests/lineage-explorer.spec.js",
-      "status": "failed"
+      "status": "passed"
     },
     {
       "method": "GET",
@@ -981,7 +981,7 @@
       "tag": "Onboarding",
       "summary": null,
       "testFile": "tests/onboarding.spec.js",
-      "status": "passed"
+      "status": "failed"
     },
     {
       "method": "POST",
@@ -1021,7 +1021,7 @@
       "tag": "Report",
       "summary": "Get Embed Details for Report to the client.",
       "testFile": "tests/report.spec.js",
-      "status": "failed"
+      "status": "passed"
     },
     {
       "method": "POST",
